@@ -1,6 +1,6 @@
 # OctoCredi
 
-OctoCredi is an example application that shows top 5 repositories (and their public data) by programming language from GitHub. Available for Ruby, Elixir, Javascript, Python and C languages.
+OctoCredi is an example application that shows Top 5 repositories (and their public data) from GitHub by programming language. Available for Ruby, Elixir, Javascript, Python and C languages.
 
 Check the [demo](https://octocredi.herokuapp.com/).
 
@@ -34,4 +34,4 @@ The frontend is developed in React with help of *react\_on\_rails* gem to avoid 
 
 ## Heroku deployment
 
-To deploy the application in Heroku, you will need a **PostgreSQL addon** and to **configure the sequence/order of buildpacks (in Settings tab) to have *heroku/nodejs* first then *heroku/ruby* **.
+To deploy the application in Heroku, you will need a **PostgreSQL addon** and to **configure the sequence/order of buildpacks (in Settings tab) to have *heroku/nodejs* first then *heroku/ruby***.
