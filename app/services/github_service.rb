@@ -12,13 +12,7 @@ class GithubService
   def top_repos_by_lang(lang)
     return [] unless languages.include?(lang)
 
-    repos = @client.search_repositories(
-      "language:#{lang}",
-      sort: 'stars',
-      order: 'desc',
-      page: 0,
-      per_page: 5
-    )
+    repos = get_lang_repositories(lang)
     add_repositories(repos.items)
   rescue Octokit::TooManyRequests, Faraday::ConnectionFailed
     Repo.where('LOWER(language) LIKE LOWER(?)', lang).order(stargazers_count: :desc).limit(5)
@@ -29,5 +23,15 @@ class GithubService
   def add_repositories(github_repos)
     repo_ids = github_repos.map { |repo| Repo.from_github(repo).try(:id) }.compact
     Repo.where(id: repo_ids).order(stargazers_count: :desc)
+  end
+
+  def get_lang_repositories(lang, per_page = 5)
+    @client.search_repositories(
+      "language:#{lang}",
+      sort: 'stars',
+      order: 'desc',
+      page: 0,
+      per_page: per_page
+    )
   end
 end

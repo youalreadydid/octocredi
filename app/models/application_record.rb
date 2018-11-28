@@ -13,7 +13,10 @@ class ApplicationRecord < ActiveRecord::Base
     identifier = Hash[default_identifier, attributes[default_identifier]]
     object = find_by(identifier)
 
-    return create(attributes) if object.nil?
+    if object.nil?
+      object = create(attributes)
+      return object.id.nil? ? nil : object
+    end
 
     object.update_attributes(attributes)
     object

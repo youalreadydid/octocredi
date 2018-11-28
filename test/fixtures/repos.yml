@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+rails:
+ github_id: 8514
+ name: "rails"
+ full_name: "rails/rails"
+ html_url: "https://github.com/rails/rails"
+ description: "Ruby on Rails"
+ fork: false
+ url: "https://api.github.com/repos/rails/rails"
+ homepage: "https://rubyonrails.org"
+ repo_created_at: 2008-04-11 02:19:47
+ repo_updated_at: 2018-11-28 17:04:00
+ repo_pushed_at: 2018-11-28 16:38:52
+ size: 168307
+ stargazers_count: 41487
+ watchers_count: 41487
+ forks_count: 16760
+ open_issues_count: 1024
+ language: "Ruby"
+ has_issues: true
+ has_projects: true
+ has_downloads: true
+ has_wiki: false
+ has_pages: false
+ archived: false
+ default_branch: "master"
+ owner: rails
+ license: mit
+
+ecto:
+ github_id: 10649374
+ name: "ecto"
+ full_name: "elixir-ecto/ecto"
+ html_url: "https://github.com/elixir-ecto/ecto"
+ description: "A database wrapper and language integrated query for Elixir"
+ fork: false
+ url: "https://api.github.com/repos/elixir-ecto/ecto"
+ repo_created_at: 2013-06-12 18:42:06
+ repo_updated_at: 2018-11-28 12:08:39
+ repo_pushed_at: 2018-11-27 08:45:33
+ homepage: "https://hexdocs.pm/ecto"
+ size: 11656
+ stargazers_count: 3910
+ watchers_count: 3910
+ forks_count: 950
+ open_issues_count: 6
+ language: "Elixir"
+ has_issues: true
+ has_projects: true
+ has_downloads: true
+ has_wiki: true
+ has_pages: false
+ archived: false
+ default_branch: "master"
+ owner: ecto
+ license: apache

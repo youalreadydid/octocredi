@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+rails:
+ login: "rails"
+ github_id: 4223
+ avatar_url: "https://avatars1.githubusercontent.com/u/4223?v=4"
+ gravatar_id: ""
+ url: "https://api.github.com/users/rails"
+ html_url: "https://github.com/rails"
+ user_type: "Organization"
+ site_admin: false
+
+ecto:
+ login: "elixir-ecto"
+ github_id: 19973437
+ avatar_url: "https://avatars3.githubusercontent.com/u/19973437?v=4"
+ gravatar_id: ""
+ url: "https://api.github.com/users/elixir-ecto"
+ html_url: "https://github.com/elixir-ecto"
+ user_type: "Organization"
+ site_admin: false

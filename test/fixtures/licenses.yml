@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+apache:
+  key: "apache-2.0"
+  name: "Apache License 2.0"
+  spdx_id: "Apache-2.0"
+  url: "https://api.github.com/licenses/apache-2.0"
+
+mit:
+  key: "mit"
+  name: "MIT License"
+  spdx_id: "MIT"
+  url: "https://api.github.com/licenses/mit"
